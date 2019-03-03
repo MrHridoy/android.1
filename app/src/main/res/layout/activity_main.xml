@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#5c33a4b1"
+    tools:context="com.example.mrhridoy.timerandstopwatch.MainActivity">
+
+    <EditText
+        android:id="@+id/text_input"
+        android:inputType="number"
+        android:hint="Enter a Minute"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/btn2"
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="14dp" />
+    <Button
+        android:id="@+id/btn1"
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_input"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="14dp" />
+    <TextView
+        android:id="@+id/text_output"
+        android:text="Show Value......."
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80sp" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:text="00:00:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#009688"
+        android:ems="10"
+        android:inputType="time"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_below="@+id/text_output"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:text="Start"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view"
+        android:layout_marginTop="35dp"
+        android:textColor="#3688c7"
+        />
+    <Button
+        android:id="@+id/btn_pause"
+        android:text="Pause"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="35dp"
+        android:textColor="#e4d020"
+        />
+    <Button
+        android:id="@+id/btn_restart"
+        android:text="Reset"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="35dp"
+        android:textColor="#9b0909"
+        />
+    <Button
+        android:text="Save Lap"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:id="@+id/btn_lap"
+        android:layout_below="@+id/btn_restart"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_lap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/listview1"/>
+
+
+</RelativeLayout>
